@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arcade Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+        <div id="title">Arcade Rock, Paper, Scissors</div>
+        
+        <div class="info-container">
+            <div id="instructions">
+                <h2>How to Play</h2>
+                <ul>
+                    <li>Click on rock, paper, or scissors to make your move</li>
+                    <li>The computer will randomly choose its move</li>
+                    <li>Rock beats scissors, scissors beats paper, paper beats rock</li>
+                    <li>First player to win 3 rounds wins the game!</li>
+                </ul>
+            </div>
+
+            <div id="rules">
+                <h3>Game Rules</h3>
+                <p>🗿 Rock crushes ✂️ Scissors</p>
+                <p>✂️ Scissors cuts 📄 Paper</p>
+                <p>📄 Paper covers 🗿 Rock</p>
+            </div>
+        </div>
+
+        <div id="score-board">
+            <span id="computer-score">0</span> (Computer) - <span id="user-score">0</span> (User)
+        </div>
+
+        <div class="screens-container">
+            <div class="player-section">
+                <div class="player-label">Computer's Move</div>
+                <div id="com-screen">
+                    <img src="com-default.png" alt="computer's move">
+                </div>
+            </div>
+
+            <div class="player-section">
+                <div class="player-label">Your Move</div>
+                <div id="user-screen">
+                    <img src="user-default.jpg" alt="user's move">
+                </div>
+            </div>
+        </div>
+            
+        <div class="options-label">Choose Your Move:</div>
+        <div id="user-options">
+            <div id="rock" title="Choose Rock"><img src="rock.png" alt="rock"></div>
+            <div id="paper" title="Choose Paper"><img src="paper.png" alt="paper"></div>
+            <div id="scissors" title="Choose Scissors"><img src="scissors.png" alt="scissors"></div>
+        </div>
+
+        <div class="result">
+            <p></p>
+        </div>
+
+        <div id="game-control">
+            <button id="continue" title="Play Next Round">Continue</button>
+            <button id="quit" title="Restart Game">Restart</button>
+        </div>
+    </div>
+    
+</body>
+<script src="script.js"></script>
+</html>
